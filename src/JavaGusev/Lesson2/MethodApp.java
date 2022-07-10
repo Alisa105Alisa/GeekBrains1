@@ -1,4 +1,4 @@
-package JavaGusev.lesson1.Lesson2;
+package JavaGusev.Lesson2;
 
 public class MethodApp {
     public static final String TEMPLATE = "int = %d string = %s\n";// это шаблон
@@ -14,7 +14,7 @@ public class MethodApp {
         //TEMPLATE = "abc"; // нельзя
     }
 
-    public static int multiplication(int n1, int n2){// n1, n2 - параметры
+    public static int multiplication(int n1, int n2) {// n1, n2 - параметры
         int result = n1 * n2;
         return result;
     }

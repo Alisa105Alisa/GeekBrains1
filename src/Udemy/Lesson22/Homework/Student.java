@@ -2,6 +2,7 @@ package Udemy.Lesson22.Homework;
 
 public class Student {
     private String name;
+
     public String getName() {
         return name;
     }
@@ -23,23 +24,25 @@ public class Student {
     }
 
     private int grade;
-    public int getGrade(){
+
+    public int getGrade() {
         return grade;
     }
-    public void setGrade (int j) {
+
+    public void setGrade(int j) {
         if (j > 0 && j < 11) {
             this.grade = j;
         }
     }
 
-    public void showInfo (){
+    public void showInfo() {
         System.out.println(getName() + " " + getCourse() + " " + getGrade());
     }
 }
 
 class TestStudent {
     public static void main(String[] args) {
-        Student s = new Student ();
+        Student s = new Student();
         s.setName("Олеша");
         s.setCourse(4);
         s.getGrade();

@@ -1,4 +1,4 @@
-package JavaGusev.lesson1.Lesson2;
+package JavaGusev.Lesson2;
 
 public class CycleApp {
     public static void main(String[] args) {
@@ -15,7 +15,7 @@ public class CycleApp {
         }
         System.out.println(getDividedByThree());
 
-        for (int i = 10; i > 0; i--){// цикл идет в обратную сторону
+        for (int i = 10; i > 0; i--) {// цикл идет в обратную сторону
             System.out.println(i);
         }
         // это бесконечный цикл:

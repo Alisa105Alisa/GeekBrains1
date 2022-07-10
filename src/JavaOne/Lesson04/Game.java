@@ -91,10 +91,11 @@ public class Game {
                     break;
             }
         } while (!isValidPlayerStep(currentX, currentY, playerPositionX, playerPositionY));
-        playerNextMoveAction(currentX, currentY, playerPositionX, playerPositionY); }
+        playerNextMoveAction(currentX, currentY, playerPositionX, playerPositionY);
+    }
 
 
-    public static void playerNextMoveAction(int currentX, int currentY, int nextX, int nextY){
+    public static void playerNextMoveAction(int currentX, int currentY, int nextX, int nextY) {
         if (map[nextY][nextX] == enemy) {
             battle();
 
@@ -127,6 +128,7 @@ public class Game {
             return false;
         }
     }
+
     public static void createEnemies() {
         enemyAttackPoint = randomRange(enemyValueMin, enemyValueMax);
         enemyHealth = randomRange(enemyValueMin, enemyValueMax);
@@ -147,6 +149,7 @@ public class Game {
 
         System.out.println("Enemy count: " + enemyCount + " (Enemy power = " + enemyAttackPoint + ", Enemy Health = " + enemyHealth + ")");
     }
+
     public static void createPlayer() {
         playerPositionX = (2);
         playerPositionY = (2);
@@ -191,10 +194,10 @@ public class Game {
         return true;
     }
 
-        public static int randomRange(int min, int max) {
-            return min + random.nextInt(max - min + 1);
-        }
-
-
+    public static int randomRange(int min, int max) {
+        return min + random.nextInt(max - min + 1);
     }
+
+
+}
 

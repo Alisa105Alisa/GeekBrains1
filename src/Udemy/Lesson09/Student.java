@@ -4,7 +4,7 @@ public class Student {
 
 }
 
-class StudentTest{
+class StudentTest {
     public static void main(String[] args) {
         Student st1 = new Student();// началась жизнь объекта st1
         Student st2 = new Student();

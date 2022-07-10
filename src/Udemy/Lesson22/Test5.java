@@ -7,9 +7,9 @@ public class Test5 {
 }
 
 class Human3 {
-        Human3 (String name, String surname) {
-   this.name = name;
-   this.surname = surname;
+    Human3(String name, String surname) {
+        this.name = name;
+        this.surname = surname;
     }
 
     String name;
@@ -18,8 +18,9 @@ class Human3 {
 
 class Student3 extends Human3 {
     int course;
-    Student3 (String name, String surname, int course){
-        super (name, surname);
+
+    Student3(String name, String surname, int course) {
+        super(name, surname);
         this.course = course;
     }
 

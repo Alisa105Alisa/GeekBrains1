@@ -27,19 +27,19 @@ public class Player {
         this.health -= value;
     }
 
-    public void moveUp(){
+    public void moveUp() {
         this.y -= 1;
     }
 
-    public void moveLeft(){
+    public void moveLeft() {
         this.x -= 1;
     }
 
-    public void moveRight(){
+    public void moveRight() {
         this.x += 1;
     }
 
-    public void moveDown(){
+    public void moveDown() {
         this.y += 1;
     }
 

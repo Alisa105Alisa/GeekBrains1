@@ -6,13 +6,16 @@ public class Test1 {
 
 class A {
     String s = "hi";
-    void abc (){
+
+    void abc() {
         System.out.println("???");
     }
 }
-class B extends A{
+
+class B extends A {
     String s = "bye";
-    void abc (){
+
+    void abc() {
         System.out.println("!!!");
     }
 }

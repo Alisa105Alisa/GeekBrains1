@@ -22,23 +22,25 @@ public class GameWindow extends JFrame {
     GameWindow() {
         setupGui();
         setUpWindow();
-map = new GameMap();
-add(gui, BorderLayout.EAST);
-add(map);
+        map = new GameMap();
+        add(gui, BorderLayout.EAST);
+        add(map);
 
         setVisible(true);
 
     }
-    private void setUpWindow (){
+
+    private void setUpWindow() {
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setLocation(winPosX, winPosY);
         setSize(winWidth, winHeight);
         setResizable(false);
         setTitle("Super Game");
     }
-    private void setupGui(){
+
+    private void setupGui() {
         gui = new JPanel();
-        gui.setLayout(new GridLayout(5,1));
+        gui.setLayout(new GridLayout(5, 1));
         setupAppControls();
         gui.add(appControlsPanel);
         setupGameInfo();
@@ -46,20 +48,21 @@ add(map);
         gui.add(gameInfoPanel);
     }
 
-    private void setupAppControls(){
+    private void setupAppControls() {
         appControlsPanel = new JPanel();
-        appControlsPanel.setLayout(new GridLayout(3,1));
+        appControlsPanel.setLayout(new GridLayout(3, 1));
         btnStartGame = new JButton("Start the Game");
-        btnExitGame = new JButton ("Exit the Game");
+        btnExitGame = new JButton("Exit the Game");
         appControlsPanel.add(new JLabel("=== Game menu ==="));
         appControlsPanel.add(btnStartGame);
         appControlsPanel.add(btnExitGame);
 
 
     }
-    private void setupGameInfo(){
+
+    private void setupGameInfo() {
         gameInfoPanel = new JPanel();
-        gameInfoPanel.setLayout(new GridLayout(4,1));
+        gameInfoPanel.setLayout(new GridLayout(4, 1));
         currentLevel = new JLabel("Current Level: - ");
         currentMapSize = new JLabel("Current Map Size: - ");
         countEnemies = new JLabel("Enemy count: - ");

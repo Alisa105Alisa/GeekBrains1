@@ -13,7 +13,7 @@ class Human {
     public static void main(String[] args) {
         Human h1 = new Human();
         h1.c = new Car();
-        h1.c = new Car ();// поменяли машину
+        h1.c = new Car();// поменяли машину
         h1.c.engine = "V8";
     }
 }

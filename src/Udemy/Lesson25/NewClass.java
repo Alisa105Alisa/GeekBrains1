@@ -3,6 +3,7 @@ package Udemy.Lesson25;
 public class NewClass {
 
 }
+
 class Car {
     static int a = 5;
 

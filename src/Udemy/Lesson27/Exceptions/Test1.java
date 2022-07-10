@@ -13,20 +13,25 @@ public class Test1 {
 class Animal {
     int a = 5;
     static int b = 10;
-    void abc (){
+
+    void abc() {
         System.out.println("non-static metod iz klassa Animal");
     }
-    static void def (){
+
+    static void def() {
         System.out.println("static metod iz klassa Animal");
     }
 }
- class Tiger extends Animal {
-     int a = 15;
-     static int b = 20;
-     void abc (){
-         System.out.println("non-static metod iz klassa Tiger");
-     }
-     static void def (){
-         System.out.println("static metod iz klassa Tiger");
-     }
- }
+
+class Tiger extends Animal {
+    int a = 15;
+    static int b = 20;
+
+    void abc() {
+        System.out.println("non-static metod iz klassa Tiger");
+    }
+
+    static void def() {
+        System.out.println("static metod iz klassa Tiger");
+    }
+}

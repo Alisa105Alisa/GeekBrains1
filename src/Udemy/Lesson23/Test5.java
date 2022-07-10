@@ -14,24 +14,29 @@ public class Test5 {
 class Employee2 {
     double salary = 100;
     String name;
-    void eat (){
+
+    void eat() {
         System.out.println("Кушает работник");
     }
-    private void sleep (){
+
+    private void sleep() {
         System.out.println("Спит работник");
     }
 }
 
 class Teacher2 extends Employee2 {
     int kolichestvouchenikov;
-    void teach (){
+
+    void teach() {
         System.out.println("Учить");
     }
+
     @Override
-    void eat (){
+    void eat() {
         System.out.println("Кушает учитель");
     }
-    public void sleep (){
+
+    public void sleep() {
         System.out.println("Спит учитель");
     }
 }

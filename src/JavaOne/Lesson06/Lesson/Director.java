@@ -1,8 +1,8 @@
 package JavaOne.Lesson06.Lesson;
 
-    public class Director {
+public class Director {
 
-        public static void main(String[] args) {
+    public static void main(String[] args) {
 
 ////        Actor actor = new Actor("Actor", 100, 0,0, 99);
 //
@@ -42,9 +42,9 @@ package JavaOne.Lesson06.Lesson;
 //
 //        int b = 15;
 //        byte result2 = (byte) b;
-            int a = 15;
-            int b = 20;
-            int result;
+        int a = 15;
+        int b = 20;
+        int result;
 
 //        if (a > b) {
 //            result = a;
@@ -52,11 +52,11 @@ package JavaOne.Lesson06.Lesson;
 //            result = b;
 //        }
 
-            //тернарный оператор
-            result = (a > b) ? a : b;
+        //тернарный оператор
+        result = (a > b) ? a : b;
 
-            System.out.println(result);
-
-        }
+        System.out.println(result);
 
     }
+
+}

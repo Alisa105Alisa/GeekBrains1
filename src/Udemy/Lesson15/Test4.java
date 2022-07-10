@@ -7,6 +7,6 @@ public class Test4 {
         while (++a < 10) {
             a++;
         }
-            System.out.println(a);
-        }
+        System.out.println(a);
     }
+}

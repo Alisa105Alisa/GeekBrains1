@@ -1,13 +1,13 @@
 package Udemy.Lesson07;
 
 public class Employee {
-     double salary;
+    double salary;
 
-     void dvoynayaZp(){
-        System.out.println("Novaya z/p: " + salary*2);
+    void dvoynayaZp() {
+        System.out.println("Novaya z/p: " + salary * 2);
     }
 
-     Employee (double salary2){
+    Employee(double salary2) {
         salary = salary2;
     }
 

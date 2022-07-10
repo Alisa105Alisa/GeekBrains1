@@ -4,16 +4,15 @@ import javax.imageio.stream.ImageInputStream;
 
 public class Test13 {
 
-    void abc(){
+    void abc() {
         String str;
         int a = 10;
-        if (a >= 10){
+        if (a >= 10) {
             str = "Привет";
         }
         if (a < 10) {
             str = "Пока";
-        }
-        else
+        } else
             str = null;
         System.out.println(str);
     }
@@ -21,7 +20,7 @@ public class Test13 {
     public static void main(String[] args) {
         int a = 10;
         int b = 20;
-        int maximum = (a > b) ? a:b;// это тернарный оператор
+        int maximum = (a > b) ? a : b;// это тернарный оператор
         System.out.println(maximum);
 
     }

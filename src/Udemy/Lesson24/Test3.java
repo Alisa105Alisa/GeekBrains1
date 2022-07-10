@@ -17,49 +17,58 @@ class Employee {
     String name;
     int age;
     int experience;
-    void eat (){
+
+    void eat() {
         System.out.println("Кушать");
     }
-    void sleep (){
+
+    void sleep() {
         System.out.println("Спать");
     }
 }
 
 
- class Teacher extends Employee implements Help_able {
+class Teacher extends Employee implements Help_able {
     int kolichestvoUchenikov;
-    void teach (){
+
+    void teach() {
         System.out.println("Учить");
     }
-     public void pomosh (){
-         System.out.println("Учитель оказывает помощь");
-     }
 
-     public void tushitPozhar (String s){
-         System.out.println("Учитель тушит пожар с помощью " + s);
-     }
+    public void pomosh() {
+        System.out.println("Учитель оказывает помощь");
+    }
+
+    public void tushitPozhar(String s) {
+        System.out.println("Учитель тушит пожар с помощью " + s);
+    }
 
 }
 
 
-class Driver extends Employee implements Help_able, Swim_able{
+class Driver extends Employee implements Help_able, Swim_able {
     String nazvanieMashiny;
-    void drive (){
+
+    void drive() {
         System.out.println("Водить");
     }
-    public void pomosh (){
+
+    public void pomosh() {
         System.out.println("Водитель оказывает помощь");
     }
-    public void tushitPozhar (String s){
+
+    public void tushitPozhar(String s) {
         System.out.println("Водитель тушит пожар с помощью " + s);
     }
-    public void swim (){
+
+    public void swim() {
         System.out.println("Водитель может плавать");
     }
 }
 
 interface Help_able {
-    void pomosh ();
+    void pomosh();
+
     void tushitPozhar(String predmet);
 }
 

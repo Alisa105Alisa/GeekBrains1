@@ -1,4 +1,4 @@
-package JavaGusev.lesson1.Lesson2;
+package JavaGusev.Lesson2;
 
 public class Switch {
     public static void main(String[] args) {
@@ -15,21 +15,19 @@ public class Switch {
         }
     }
 
-    public static void checkOrderStatus (String orderStatus) {
+    public static void checkOrderStatus(String orderStatus) {
         if (orderStatus.equals("ACCEPTED")) {
             System.out.println("Принят");
-        }
-        else if (orderStatus.equals("DELIVERED")){
+        } else if (orderStatus.equals("DELIVERED")) {
             System.out.println("Доставлен");
-        }
-        else {
+        } else {
             System.out.println("Неизвестный статус заказа");
         }
     }
 
     public static void checkOrderStatus2(String orderStatus) {
         switch (orderStatus) {
-            case "ACCEPTED":{
+            case "ACCEPTED": {
                 System.out.println("Принят");
                 break;
             }

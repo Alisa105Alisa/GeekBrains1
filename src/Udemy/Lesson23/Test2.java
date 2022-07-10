@@ -10,51 +10,57 @@ public class Test2 {
 //        Employee e = new Employee();
 //        Hirurg x = new Hirurg ();
 
-        Employee emp1 = new Doctor ();//employee может ссылаться на дочерний объект
+        Employee emp1 = new Doctor();//employee может ссылаться на дочерний объект
         System.out.println(emp1.salary);
         System.out.println(emp1.name);
-        System.out.println(emp1. age);
+        System.out.println(emp1.age);
         System.out.println(emp1.experience);
         emp1.eat();
         emp1.sleep();
 
-        Employee emp2 = new Teacher ();// учитель - это работник
-        Employee emp3 = new Driver ();
+        Employee emp2 = new Teacher();// учитель - это работник
+        Employee emp3 = new Driver();
 
-        Doctor d2 = new Hirurg ();
+        Doctor d2 = new Hirurg();
         Employee emp4 = new Hirurg();
     }
 }
+
 class Employee {
     double salary = 100;
     String name;
     int age;
     int experience;
-    void eat (){
+
+    void eat() {
         System.out.println("Кушать");
     }
-    void sleep (){
+
+    void sleep() {
         System.out.println("Спать");
     }
 }
 
 class Doctor extends Employee {
     String specializaciya;
-    void heal (){
+
+    void heal() {
         System.out.println("Лечить");
     }
 }
 
 class Teacher extends Employee {
     int kolichestvouchenikov;
-    void teach (){
+
+    void teach() {
         System.out.println("Учить");
     }
 }
 
 class Driver extends Employee {
     String nazvanieMashiny;
-    void drive (){
+
+    void drive() {
         System.out.println("Водить");
     }
 }

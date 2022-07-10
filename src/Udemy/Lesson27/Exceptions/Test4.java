@@ -1,5 +1,7 @@
 package Udemy.Lesson27.Exceptions;
+
 import java.io.*;
+
 public class Test4 {
     public static void main(String[] args) {
 
@@ -8,11 +10,9 @@ public class Test4 {
         try {
             System.out.println(array[5]);
             System.out.println("Всем хорошего дня!");
-        }
-        catch (ArrayIndexOutOfBoundsException e) {
+        } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("Был пойман exception " + e);// покажет, какой именно exception
-        }
-        finally {
+        } finally {
             System.out.println("Это блок finally");
         }
 

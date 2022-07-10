@@ -8,8 +8,8 @@ public class HomeWork02 {
         double d2 = 1.3;
         long l = 20l;
         double result = 0;
-        result = i2/d1 + d2 % i1 - l;
-        double d3 = d2%i1;
+        result = i2 / d1 + d2 % i1 - l;
+        double d3 = d2 % i1;
 
         System.out.println(result);
         System.out.println(d3);

@@ -1,4 +1,5 @@
-package JavaGusev.lesson1.Lesson2;
+package JavaGusev.Lesson2;
+
 /**
  * Создать поле 6х6 и заполнить его *
  */
@@ -14,8 +15,8 @@ public class DemoApp {
                     System.out.print("0 ");
                 }
             }
-                System.out.println();
+            System.out.println();
 
-            }
         }
+    }
 }

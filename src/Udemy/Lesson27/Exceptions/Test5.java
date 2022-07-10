@@ -1,7 +1,7 @@
 package Udemy.Lesson27.Exceptions;
 
 public class Test5 {
-    static void abc(){
+    static void abc() {
         System.out.println("работет метод abc");
         abc();
     }
@@ -9,10 +9,9 @@ public class Test5 {
     public static void main(String[] args) {
         try {
             abc();
+        } catch (StackOverflowError e) {
+            System.out.println(" Error is catched");
         }
-       catch (StackOverflowError e) {
-           System.out.println(" Error is catched");
-       }
 
     }
 }

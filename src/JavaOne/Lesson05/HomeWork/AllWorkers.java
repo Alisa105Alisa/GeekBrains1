@@ -21,9 +21,10 @@ public class AllWorkers {
         ageArray(workerArray);
 
     }
+
     private static void allWorkers(Worker[] workerArray) {
         for (int i = 0; i < workerArray.length; i++)
-                System.out.println(workerArray[i].getFullInfo());
+            System.out.println(workerArray[i].getFullInfo());
 
     }
 
