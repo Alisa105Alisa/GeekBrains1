@@ -7,20 +7,21 @@ public class BankAccount {
     String name;
     double balance;
 
-double popolnenieScheta (int summa) {
-    balance += summa;
-    return balance;
+    double popolnenieScheta(int summa) {
+        balance += summa;
+        return balance;
     }
-double snyatieSoScheta (int summa) {
-    balance -= summa;
-    return balance;
-}
 
-    void accountInfo(){
+    double snyatieSoScheta(int summa) {
+        balance -= summa;
+        return balance;
+    }
+
+    void accountInfo() {
         System.out.println("ID: " + id + " Name: " + name + " Balance: " + balance);
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         BankAccount MyAccount = new BankAccount();
         BankAccount YourAccount = new BankAccount();
         BankAccount HisAccount = new BankAccount();
@@ -39,7 +40,6 @@ double snyatieSoScheta (int summa) {
 
 
         System.out.println(YourAccount.name);
-
 
 
         MyAccount.accountInfo();

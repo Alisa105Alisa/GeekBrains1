@@ -2,24 +2,24 @@ package Udemy.Lesson18;
 
 public class Test2 {
     public static void main(String[] args) {
-        String [] array1;
-        int [][] array2;
-        int [] array20 [][];// можно по-всякому объявлять массивы
+        String[] array1;
+        int[][] array2;
+        int[] array20[][];// можно по-всякому объявлять массивы
 
         array1 = new String[3];
         array2 = new int[3][];
 
-        for (int i = 0; i < array1.length; i++){
-            array1 [i] = "Привет" + i;
+        for (int i = 0; i < array1.length; i++) {
+            array1[i] = "Привет" + i;
             System.out.println(array1[i]);
         }
 
-        array2[0] = new int [5];
-        array2[0] = new int [2];
-        array2[0] = new int [7];
+        array2[0] = new int[5];
+        array2[0] = new int[2];
+        array2[0] = new int[7];
 
-        for (int i = 0; i < array2.length; i++){
-            for (int j = 0; j < array2[i].length; j++){
+        for (int i = 0; i < array2.length; i++) {
+            for (int j = 0; j < array2[i].length; j++) {
                 array2[i][j] = i + j;
                 System.out.println(array2[i][j]);
             }

@@ -4,8 +4,9 @@ import java.util.Random;
 
 public class Massive {
     public static Random random = new Random();
+
     public static void main(String[] args) {
-        int [] myArrayInt = new int[8];
+        int[] myArrayInt = new int[8];
         myArrayInt[0] = 15;
         myArrayInt[1] = 11;
         myArrayInt[2] = 16;
@@ -19,13 +20,14 @@ public class Massive {
 
         int[] bigArray = new int[59];
         for (int i = 0; i < bigArray.length; i++) {
-bigArray[i] = randomIntRange(10,20);
+            bigArray[i] = randomIntRange(10, 20);
         }
         for (int i = 0; i < bigArray.length; i++) {
             System.out.print(bigArray[i] + " ");
         }
 
     }
+
     public static int randomIntRange(int min, int max) {
         int diff = max - min;
         int value = random.nextInt(diff + 1);

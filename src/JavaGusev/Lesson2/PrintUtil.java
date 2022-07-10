@@ -1,8 +1,8 @@
-package JavaGusev.lesson1.Lesson2;
+package JavaGusev.Lesson2;
 
 public class PrintUtil {
     /**
-     *  Форматирует строку тремя * до и после
+     * Форматирует строку тремя * до и после
      *
      * @param str
      */
@@ -13,7 +13,8 @@ public class PrintUtil {
     public static String getFormatted(String str) {// берет строку, форматирует и отдает назад
         return "***" + str + "***";
     }
-    public static void doSmth(){
+
+    public static void doSmth() {
 
     }
 }

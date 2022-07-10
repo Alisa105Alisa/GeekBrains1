@@ -7,13 +7,13 @@ public class Farm {
 
 //catBaron.run(150);
 
-        Dog dogTobik = new Dog("Tobik", "red", 10, 300,10);
+        Dog dogTobik = new Dog("Tobik", "red", 10, 300, 10);
 
         dogTobik.run(300);
         dogTobik.swim(10);
     }
 
-    public static void countCats(){
+    public static void countCats() {
 
     }
 }

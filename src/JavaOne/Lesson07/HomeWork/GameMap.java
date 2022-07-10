@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class GameMap extends JPanel {
-    GameMap(){
+    GameMap() {
         setBackground(Color.BLACK);
     }
 }

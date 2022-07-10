@@ -2,18 +2,23 @@ package Udemy.Lesson22;
 
 public class Human {
 
-   private String name = "Коля";
-    public String getName (){
+    private String name = "Коля";
+
+    public String getName() {
         return name;
     }
-    public void setName (String n){
+
+    public void setName(String n) {
         name = n;
     }
+
     public static int salary = 150;
-    public void work (){
+
+    public void work() {
         System.out.println("Работать");
     }
-    public static void rest (){
+
+    public static void rest() {
         System.out.println("Отдыхать");
     }
 }

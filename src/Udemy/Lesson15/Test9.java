@@ -10,7 +10,9 @@ public class Test9 {
 
             INNER:
             while (minuta < 60) {
-                if (minuta == 20){continue OUTER;}// пропустит 20
+                if (minuta == 20) {
+                    continue OUTER;
+                }// пропустит 20
                 System.out.println(chas + ":" + minuta);
                 minuta++;
             }

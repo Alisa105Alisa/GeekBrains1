@@ -4,7 +4,7 @@ public class Month {
 
     public static void main(String[] args) {
         int month = 5;
-        switch (month){
+        switch (month) {
             case 1:
             case 3:
             case 5:

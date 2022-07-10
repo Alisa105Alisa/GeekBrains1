@@ -3,9 +3,10 @@ package Udemy.Lesson22;
 import javax.print.Doc;
 
 public class Test3 {
-    void uvelichenieZarplaty (Employee e){
+    void uvelichenieZarplaty(Employee e) {
         e.salary = e.salary + 100;
     }
+
     public static void main(String[] args) {
         Doctor doc = new Doctor();
         doc.name = "Иван";
@@ -17,42 +18,47 @@ public class Test3 {
         doc.heal();
     }
 }
+
 class Employee {
     double salary = 100;
     String name;
     int age;
     int experience;
-    void eat (){
+
+    void eat() {
         System.out.println("Кушать");
     }
-    void sleep (){
+
+    void sleep() {
         System.out.println("Спать");
     }
 }
 
-class Doctor extends Employee{
+class Doctor extends Employee {
 
     String specializaciya;
-    void heal (){
+
+    void heal() {
         System.out.println("Лечить");
     }
 }
 
 class Teacher extends Employee {
-    void teach (){
+    void teach() {
         System.out.println("Учить");
     }
 }
 
 class Driver extends Employee {
-    void drive (){
+    void drive() {
         System.out.println("Водить");
     }
 }
 
 class Hirurg extends Doctor {
     String skalpel;
-    void operaciya(){
+
+    void operaciya() {
 
     }
 }

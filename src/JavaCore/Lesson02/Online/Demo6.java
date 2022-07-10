@@ -12,7 +12,7 @@ public class Demo6 {
 
     }
 
-    private static int division(int a, int b) throws ArithmeticException{
+    private static int division(int a, int b) throws ArithmeticException {
         return a / b;
     }
 

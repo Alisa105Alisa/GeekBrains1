@@ -21,7 +21,7 @@ public class HomeWorkApp3 {
         fourthArray(fourthArray);
         System.out.println(Arrays.deepToString(fourthArray));
         System.out.println("**********");
-        int[] fifthArray= fifthArray(6,7);
+        int[] fifthArray = fifthArray(6, 7);
         printArray(fifthArray);
 
     }
@@ -63,10 +63,10 @@ public class HomeWorkApp3 {
         }
     }
 
-    public static int []fifthArray(int len, int initialValue) {
+    public static int[] fifthArray(int len, int initialValue) {
         int[] arr = new int[len];
         for (int i = 0; i < arr.length; i++) {
-          arr[i] = initialValue;
+            arr[i] = initialValue;
         }
         return arr;
     }

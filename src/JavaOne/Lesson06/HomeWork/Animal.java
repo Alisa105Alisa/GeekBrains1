@@ -10,7 +10,7 @@ public abstract class Animal {
     protected String cantSwim = "Can't swim";
 
     public Animal(String name, String color, int age, int maxRunLength, int maxSwimLength) {
-        this.name  = name;
+        this.name = name;
         this.color = color;
         this.age = age;
         this.maxRunLength = maxRunLength;
@@ -21,6 +21,7 @@ public abstract class Animal {
     String getName() {
         return this.name;
     }
+
     String getColor() {
         return this.color;
     }
@@ -28,9 +29,11 @@ public abstract class Animal {
     int getAge() {
         return this.age;
     }
+
     int getMaxRunLength() {
         return this.maxRunLength;
     }
+
     int getMaxSwimLength() {
         return this.maxSwimLength;
     }

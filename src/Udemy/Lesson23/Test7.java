@@ -14,13 +14,13 @@ class A {
 }
 
 class B extends A {
-    void abc(B b1){
+    void abc(B b1) {
         System.out.println("B");
     }
 }
 
 class C extends B {
-    void abc(B b2){
+    void abc(B b2) {
         System.out.println("C");
     }
 }

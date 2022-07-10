@@ -17,7 +17,7 @@ public class Sand {
 
     }
     //public static String greetingUser(String msg) {
-      //  System.out.print(msg + " hi");
-        //return scanner.next();
-   // }
+    //  System.out.print(msg + " hi");
+    //return scanner.next();
+    // }
 }

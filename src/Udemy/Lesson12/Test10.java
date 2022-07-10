@@ -9,7 +9,7 @@ public class Test10 {
 
         if (salary >= 500)
             System.out.println(":-)");
-       // System.out.println("ffff");// так Java считает, что else используется без if и компилятор выдает ошибку
+            // System.out.println("ffff");// так Java считает, что else используется без if и компилятор выдает ошибку
         else
             System.out.println(":-(");
         System.out.println("Все будет хорошо!");
@@ -17,21 +17,18 @@ public class Test10 {
     }
 }
 
-class Test11{
+class Test11 {
     public static void main(String[] args) {
         int zarplata = 900;
         boolean b = true;
 
-        if (zarplata < 200){
+        if (zarplata < 200) {
             System.out.println("Зарплата очень низка");
-        }
-        else if (zarplata < 400 && b== false|| true){
+        } else if (zarplata < 400 && b == false || true) {
             System.out.println("Зарплата среднего размера");
-        }
-        else if (zarplata < 600){
+        } else if (zarplata < 600) {
             System.out.println("Зарплата высокая");
-        }
-        else
+        } else
             System.out.println("Зарплата отличная");
     }
 }

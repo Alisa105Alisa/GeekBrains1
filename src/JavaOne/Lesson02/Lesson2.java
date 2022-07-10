@@ -25,7 +25,7 @@ public class Lesson2 {
         }
 
         System.out.println("Result myMath > " + myMath(2, 10));
-        tablePifagors(5,20);
+        tablePifagors(5, 20);
         int a = 0;
 
         for (int i = 0; i < 5; i++) {

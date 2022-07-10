@@ -17,7 +17,7 @@ public class Demo4 {
             с[42] = 99;
         } catch (ArithmeticException е) {
             System.out.println("Дeлeниe на ноль: " + е);
-        } catch (ArrayIndexOutOfBoundsException е){
+        } catch (ArrayIndexOutOfBoundsException е) {
             System.out.println("Ошибка индексации массива: " + е);
         }
         System.out.println("Пocлe блока операторов try/catch");

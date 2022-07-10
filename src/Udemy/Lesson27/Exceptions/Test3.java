@@ -1,5 +1,7 @@
 package Udemy.Lesson27.Exceptions;
+
 import java.io.*;
+
 public class Test3 {
     public static void main(String[] args) throws Exception {
         File f = new File("/Users/alfia/Documents/Тестирование/Java/GeekBrains/Test10.txt");

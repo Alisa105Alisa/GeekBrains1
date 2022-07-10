@@ -3,14 +3,16 @@ package Udemy.Lesson23;
 public class A10 {
     String s1 = "hi";
     static double d1 = 3.14;
-    int summa (int ... i){
+
+    int summa(int... i) {
         int result = 0;
-        for (int a:i){
+        for (int a : i) {
             result += a;
         }
         return result;
     }
-    static void abc (){
+
+    static void abc() {
         System.out.println("static method");
     }
 }

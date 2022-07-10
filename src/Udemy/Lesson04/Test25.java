@@ -7,7 +7,7 @@ public class Test25 {
     int b2 = -20;
     char c = 'a';
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         int a = 10;
         System.out.println(a);
 

@@ -3,7 +3,7 @@ package Udemy.Lesson16;
 public class Test2 {
 
     public static void main(String[] args) {
-        String s1 = new String ("elefant");
+        String s1 = new String("elefant");
 
         String s10 = s1.substring(3);// начиная с 3 символа присвой
         System.out.println(s10);

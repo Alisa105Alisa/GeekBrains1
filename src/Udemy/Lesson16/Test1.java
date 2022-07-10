@@ -2,7 +2,7 @@ package Udemy.Lesson16;
 
 public class Test1 {
     public static void main(String[] args) {
-        String s1  = new String("Привет");
+        String s1 = new String("Привет");
 
         int a = s1.length();// узнаем, какая длина массива
         System.out.println(a);
@@ -22,5 +22,5 @@ public class Test1 {
 
     }
 
-    }
+}
 
