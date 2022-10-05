@@ -76,9 +76,9 @@ public class HomeWork {
     public static void aiTurn() {
         int x, y;
         do {
-            x = RANDOM.nextInt(SIZE);
+            x = RANDOM.nextInt(SIZE);// nextInt - псевдорандомное значение между 0 исключительно и переданным значением включительно
             y = RANDOM.nextInt(SIZE);
-        } while (!isCellValid(x, y));
+        } while (!isCellValid(x, y));//валидность ячейки нужна, чтобы робот не пошел в занятую ячейку
         System.out.println("Робот делает ход в " + (x + 1) + " " + (y + 1));
         map[y][x] = DOT_O;
     }
@@ -100,64 +100,21 @@ public class HomeWork {
         return true;
     }
 
-    public static boolean checkWin(char symbol) {
+        public static boolean checkWin(char symbol) {
+            for (int i = 0; i < map.length; i++) {
+                for (int j = 0; j < map[i].length; j++) {
 
-        for (int i = 0; i < map.length; i++) {
-            for (int j = 0; j < map[i].length; j++) {
-                if ((map[i][j] == symbol) && (i == j) || (map[i][j] == symbol) && ((i + j) == map.length - 1 )){
-                    return true;
+                    if ((map[i][0] == symbol && map[i][1] == symbol && map[i][2] == symbol) ||
+                            (map[0][i] == symbol && map[1][i] == symbol && map[2][i] == symbol))
+                        return true;
                 }
+                if ((map[0][0] == symbol && map[1][1] == symbol && map[2][2] == symbol) ||
+                        (map[2][0] == symbol && map[1][1] == symbol && map[0][2] == symbol))
+                    return true;
             }
-            return false;
-        }
+                return false;
+            }
 
-
-    //строки
-
-//        if(map[0][0]==symbol &&map[0][1]==symbol &&map[0][2]==symbol)
-//
-//    {
-//        return true;
-//    }
-//        if(map[1][0]==symbol &&map[1][1]==symbol &&map[1][2]==symbol)
-//
-//    {
-//        return true;
-//    }
-//        if(map[2][0]==symbol &&map[2][1]==symbol &&map[2][2]==symbol)
-//
-//    {
-//        return true;
-//    }
-//    //столбцы
-//        if(map[0][0]==symbol &&map[1][0]==symbol &&map[2][0]==symbol)
-//
-//    {
-//        return true;
-//    }
-//        if(map[0][1]==symbol &&map[1][1]==symbol &&map[2][1]==symbol)
-//
-//    {
-//        return true;
-//    }
-//        if(map[0][2]==symbol &&map[1][2]==symbol &&map[2][2]==symbol)
-//
-//    {
-//        return true;
-//    }
-//    //диагонали
-//        if(map[0][0]==symbol &&map[1][1]==symbol &&map[2][2]==symbol)
-//
-//    {
-//        return true;
-//    }
-//        if(map[0][2]==symbol &&map[1][1]==symbol &&map[2][0]==symbol)
-//
-//    {
-//        return true;
-//    }
-//        return false;
-//}
 
     /**
      * Проверка что в поле не осталось ни одной ссвободной ячейки.
@@ -202,8 +159,9 @@ public class HomeWork {
         }
         System.out.println("Game over");
     }
+
 }
-    }
+
 
 
 
